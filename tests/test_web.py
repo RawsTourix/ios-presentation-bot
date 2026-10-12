@@ -38,6 +38,7 @@ def test_dashboard_and_api(tmp_path):
         page = client.get("/screen")
         assert page.status_code == 200
         assert "будущие программисты" in page.text
+        assert page.text.index('class="choice android"') < page.text.index('class="choice ios"')
         assert "/static/screen.js" in page.text
         assert client.get("/static/screen.js").status_code == 200
         assert client.get("/static/screen.css").status_code == 200
