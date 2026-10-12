@@ -1,0 +1,1 @@
+"""iOS presentation polling application."""
