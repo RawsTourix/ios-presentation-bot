@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iOS или Android? — голосование</title>
+  <link rel="stylesheet" href="/static/screen.css">
+  <script defer src="/static/screen.js"></script>
+</head>
+<body>
+<main class="dashboard">
+  <header>
+    <div class="eyebrow">ОПЕРАЦИОННЫЕ СИСТЕМЫ / ИНТЕРАКТИВ</div>
+    <h1>Что выбирают <em>будущие программисты?</em></h1>
+    <p class="subtitle">Операционная система основного смартфона</p>
+    <div class="states">
+      <span id="poll-status" aria-live="polite">Ожидаем голосования</span>
+      <span id="connection-status" class="offline">Подключение…</span>
+    </div>
+  </header>
+  <section class="chart" aria-label="Результаты голосования">
+    <div class="choice ios">
+      <div class="stats"><strong id="ios-percent">0%</strong><span id="ios-votes">0 голосов</span></div>
+      <div class="plot"><div id="ios-bar" class="bar" role="img" aria-label="iOS: 0 голосов"></div></div>
+      <h2>iOS</h2>
+    </div>
+    <div class="choice android">
+      <div class="stats"><strong id="android-percent">0%</strong><span id="android-votes">0 голосов</span></div>
+      <div class="plot"><div id="android-bar" class="bar" role="img" aria-label="Android: 0 голосов"></div></div>
+      <h2>Android</h2>
+    </div>
+  </section>
+  <footer>
+    <div><small>ПРОГОЛОСОВАЛИ</small><strong id="total">0</strong></div>
+    <div><small>ДРУГАЯ ОС</small><strong id="other">0</strong></div>
+    <div><small>ШКАЛА ГОЛОСОВ</small><strong id="scale">0–30</strong></div>
+  </footer>
+</main>
+</body>
+</html>
