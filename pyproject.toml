@@ -17,3 +17,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 include = ["ios_poll*"]
+
+[tool.setuptools.package-data]
+ios_poll = ["static/*.html", "static/*.css", "static/*.js"]
